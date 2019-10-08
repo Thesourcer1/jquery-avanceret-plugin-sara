@@ -1,0 +1,103 @@
+* { /* Gælder alt på hele siden */
+    -webkit-box-sizing: border-box; /* -webkit- browserunderstøttelse */
+    box-sizing: border-box; /* Bokse har altid den størrelse man giver uanset om der tilføjes margen mv. */
+}
+
+body {
+    margin: 0; /* Ingen kanter i siden af browser */
+    text-align: center;
+    background: #C7E5E6;
+    font-family: 'Helvetica', Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+ul, ol {
+    margin: 0; /* Ingen ydre margen fra lister */
+    padding: 0; /* Ingen indre margen fra lister */
+    list-style-position: inside; /* List punkter står på linje */
+}
+
+li {
+    margin: 0; /* Ingen ydre margen fra listpunkter */
+}
+
+p {
+    margin: 0; /* Ingen ydre margen fra paragraffer */
+    padding: 0; /* Ingen indre margen fra paragraffer */
+    color: #474544;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Sikrer billeder er responsive */
+img {
+    display: block; /* Billeder er et element (laver linjeskift) */
+    max-width: 100%; /* Bredde må maks fylde 100% */
+    height: auto; /* Højden skal tilpasse sig */
+}
+.text{
+    color: #363d4e;
+    font-size: 30px;
+    margin: 60px;
+    font-weight: bold;
+}
+h1 {
+    color: #A6A49C;
+    font-family: 'Palanquin', Arial, sans-serif;
+}
+.button{
+    position: relative;
+    top: 50px;
+    background-color: #363d4e;
+    padding: 0em 2em;
+    color: white;
+    border: 0;
+    letter-spacing: 2px;
+    line-height: 66px;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.button:hover{
+    background-color: #333333;
+}
+
+.modal_container{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+.modal_content{
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 20px;
+    width: 70%;
+}
+
+.closebtn{
+    color: #363d4e;
+    border: none;
+    float: right;
+    font-size: 30px;
+}
+
+.closebtn:hover,.closebtn:focus{
+    color: #3e465a;
+    text-decoration: none;
+    cursor: pointer;
+
+}

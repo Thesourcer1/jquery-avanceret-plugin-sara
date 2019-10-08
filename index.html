@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- Fortæller det er html5 -->
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
+<head>
+
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Sigende titel</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link href="css/modal.css" rel="stylesheet" type="text/css">
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<!-- i <body> har man alt indhold på siden -->
+<body>
+<div class="text">
+    <h2>WOHUU! Red dead redemption 2 kommer ud til pc!</h2>
+    <p>download den nu forneden! ;)</p>
+</div>
+<button id="open-btn" class="button" >download
+</button>
+
+<div id="open-modal" class="modal_container">
+    <div class="modal_content">
+        <span class="closebtn" id="close-btn">&times;</span>
+        <h1>haha, hov der fik jeg dig!</h1>
+        <p>man må sgu ikke downloade et spil ulovlig :p</p>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="js/modal.js"></script>
+<script>
+    $(document).ready(function (e) {
+        $(".modal_container").modal({
+            selectbtn: {
+                openbutton: 'open-btn',
+                openmodal: 'open-modal',
+                closebutton: 'close-btn',
+            },
+            modal: {
+                duration: '0',
+            },
+            style: {
+                background: 'rgba(0,0,0,0.2)',
+            },
+            closeoption: {
+                clickanywhere: 'yes'
+            },
+        });
+    });
+</script>
+</body>
+</html>
